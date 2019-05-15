@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+    <script>
+      $(document).ready(function(){
+        /*! Fades in page on load */
+        $('body').css('display', 'none');
+        $('body').fadeIn(400);});
+    </script>
+  <title>IE Standup Randomizer</title>
+</head>
+<body background="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Internet_Explorer_10%2B11_logo.svg/1043px-Internet_Explorer_10%2B11_logo.svg.png" style="width: 80%; margin: auto; repeat: none;">
+    <h1 style="font-size: 8em">IE Standup Randomizer</h1>
+    <a href="/random" class="btn" onclick="document.body.style.background = " style="margin: 2vw">Click Here</a>
+    <ol>
+      {{#each team}}
+      <h3 class="scale-transition">{{this}}</h3>
+      {{/each}}
+    </ol>
+  </div>
+</body>
+</html>
+
+
